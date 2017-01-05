@@ -1,0 +1,9 @@
+#目录
+/target/
+/.settings/
+/.git/
+
+#文件
+.project
+.classpath
+.*.swp
