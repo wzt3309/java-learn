@@ -81,5 +81,21 @@
 
 >*`PosixFileAttributes` unix操作系统文件属性	
 
+###使用Files进行快速读写
+
+>*`Files.newBufferedReader  Files.newBufferedWriter`(与老IO进行交互，不需要包装方式)
+
+>*`Files.readAllLines  Files.readAllBytes`（快速读写）
+
+###异步IO `AsyhchronousFileChannel` 
+
+>异步的意义在于，在执行大文件io时，主线程还能继续执行其他任务，不会阻塞在read上
+
+>方式一：将来式 `Future`，主线程在等待read时可以继续执行任务，如果任务完成了read还没完成，则等待read
+
+>方式二：回调式 `CompletionHandler<v,A>` 当io结束后，主线程会回调complete或者failed方法，
+
+>但如果io还么结束，主线程已经终结，那么就不会执行回调方法
+
 
 
