@@ -21,7 +21,7 @@ public class EvenChecker implements Runnable{
 				//就像是开火车，越过val % 2的火车全部停在了这个
 				//没越过while的火车，因为次补操作，全部终止了
 				// 此处操作为原子性的，及时阻止其他检查器再进行获取数字
-				generator.canceled(); 
+				generator.canceled();
 			}
 		}
 	}
@@ -40,14 +40,15 @@ public class EvenChecker implements Runnable{
 	}
 	
 	public static void main(String[] args) {
-		EvenChecker.test(new IntGenerator() {
-			int currentEvenVal = 0;
-			@Override
-			public int next() {
-				currentEvenVal++;	// 危险操作
-				currentEvenVal++;
-				return currentEvenVal;
-			}
-		});
+//		EvenChecker.test(new IntGenerator() {
+//			int currentEvenVal = 0;
+//			@Override
+//			public int next() {
+//				currentEvenVal++;	// 危险操作
+//				currentEvenVal++;
+//				return currentEvenVal;
+//			}
+//		});
+		EvenChecker.test(new SyncIntGenerator());
 	}
 }
