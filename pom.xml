@@ -30,9 +30,9 @@
 
     <!-- JMS提供者 并自带JMS接口 javax.jms-->
     <dependency>
-	    <groupId>org.apache.activemq</groupId>
-	    <artifactId>activemq-all</artifactId>
-	    <version>5.2.0</version>
+        <groupId>org.apache.activemq</groupId>
+        <artifactId>activemq-all</artifactId>
+        <version>5.2.0</version>
     </dependency>
   </dependencies>  
 </project>

@@ -1,4 +1,4 @@
-package jnp.wzt.jms;
+package jnp.wzt.jms.demo;
 
 import java.io.BufferedReader;
 import java.io.IOException;
