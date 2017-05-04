@@ -35,6 +35,7 @@ public class QBorrower {
 		qSession = qConnect.createQueueSession(false, Session.AUTO_ACKNOWLEDGE);
 		requestQ = (Queue)ctx.lookup(loanRequestQ);
 		responseQ = (Queue)ctx.lookup(loanResponseQ);
+		qConnect.start();
 	}
 	
 	public void sendLoanRequest(double salary, double loanAmt) {
@@ -90,11 +91,16 @@ public class QBorrower {
 		System.out.println("\ne.g. 50000, 120000");
 		
 		while(true) {
-			System.out.println("> ");
+			if("exit".equals(sc.next())) {
+				sc.close();
+				break;
+			}
 			double salary = sc.nextDouble();
 			double loanAmt = sc.nextDouble();
 			borrower.sendLoanRequest(salary, loanAmt);
 		}
+		
+		borrower.exit();
 	}
 
 }
