@@ -9,5 +9,4 @@
 .project
 .classpath
 .*.swp
-*.iml
-
+/think-in-java.iml
