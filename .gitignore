@@ -3,9 +3,11 @@
 /.settings/
 /.git/
 /bin/
+/.idea/
 
 #文件
 .project
 .classpath
 .*.swp
+*.iml
 
