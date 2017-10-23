@@ -1,9 +1,0 @@
-HTTP/1.0 200 OK
-Server: MY SERVER
-Content-Length: 32
-Content-Type: text/plain
-
-{
-  "aa": "123",
-  "bb": "145"
-}
