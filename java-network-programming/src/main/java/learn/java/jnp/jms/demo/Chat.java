@@ -1,4 +1,4 @@
-package learn.java.jnp.demo;
+package learn.java.jnp.jms.demo;
 
 import java.io.BufferedReader;
 import java.io.IOException;

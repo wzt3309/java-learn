@@ -1,4 +1,4 @@
-package learn.java.jnp.demo;
+package learn.java.jnp.jms.demo;
 
 import java.io.IOException;
 import java.util.Properties;

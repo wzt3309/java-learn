@@ -1,4 +1,4 @@
-package learn.java.jnp.demo;
+package learn.java.jnp.jms.demo;
 
 import javax.jms.JMSException;
 import javax.jms.Message;
