@@ -1,4 +1,4 @@
-package tij.wzt.ch21_concurrent;
+package learn.java.tij.ch21;
 
 public class SyncIntGenerator extends IntGenerator {
 	private int currentEvenVal = 0;

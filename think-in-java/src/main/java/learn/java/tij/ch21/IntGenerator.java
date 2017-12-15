@@ -1,4 +1,4 @@
-package tij.wzt.ch21_concurrent;
+package learn.java.tij.ch21;
 
 public abstract class IntGenerator {
 	private volatile boolean cancel = false;

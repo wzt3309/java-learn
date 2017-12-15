@@ -1,4 +1,4 @@
-package tij.wzt.ch21_concurrent;
+package learn.java.tij.ch21;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
