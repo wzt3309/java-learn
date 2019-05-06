@@ -4,6 +4,7 @@
 /.git/
 /bin/
 /.idea/
+**/target
 
 #文件
 .project
