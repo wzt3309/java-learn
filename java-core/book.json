@@ -1,0 +1,19 @@
+{
+    "plugins": [
+        "code",
+        "-lunr", 
+        "-search", 
+        "search-pro",
+        "github",
+        "flexible-alerts",
+        "splitter",
+        "expandable-chapters-small",
+        "codetabs",
+        "katex"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/wzt3309/java-learn"
+        }
+    }
+}
