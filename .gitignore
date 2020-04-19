@@ -11,3 +11,6 @@
 .classpath
 .*.swp
 *.iml
+
+# gitbook
+_book/
