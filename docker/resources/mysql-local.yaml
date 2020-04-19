@@ -1,0 +1,30 @@
+version: "3"
+services:
+  dev_db:
+    container_name: dev_db
+    hostname: dev_db
+    image: mysql
+    restart: always
+    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+    environment:
+      MYSQL_DATABASE: dev_db
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - dev_dbdata:/var/lib/mysql
+    networks:
+      dev_net:
+        aliases:
+          - mysql
+          - mysql-db
+          - database
+          - db
+
+volumes:
+  dev_dbdata:
+networks:
+  dev_net:
+

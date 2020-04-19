@@ -14,3 +14,6 @@
 
 # gitbook
 _book/
+
+# NPM
+node_modules
