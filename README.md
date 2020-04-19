@@ -1,6 +1,5 @@
 ---
-description: Note for spring framework
+description: Note for Java
 ---
 
-# Spring framework
-
+# Java Learn
