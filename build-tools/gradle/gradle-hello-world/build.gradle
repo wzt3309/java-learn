@@ -1,0 +1,15 @@
+task helloWorld {
+    doLast {
+        println "hello world!"
+    }
+}
+
+def chant() {
+    ant.echo(message: "hello")
+}
+
+task startSession {
+    chant()
+}
+
+task groupTest(dependsOn: startSession)
